@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #f6f7fb;
+  color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #f4f7ff 0%, #ffffff 100%);
+}
+
+main {
+  padding: 3rem 1.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  line-height: 1.05;
+}
+
+a {
+  color: #209dd7;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
