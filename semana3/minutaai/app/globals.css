@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/*
+ * Design system (Stitch) → tokens de Tailwind 4.
+ * Tailwind 4 se configura en CSS con @theme en lugar de tailwind.config.js:
+ * aquí declaramos solo lo que la paleta nativa no cubre (brand) y la fuente.
+ */
+@theme {
+  --color-brand: #2d336b; /* headings de alto nivel */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-slate-50); /* #F8FAFC */
+  color: var(--color-slate-900);
+  font-family: var(--font-sans);
+}
+
+/* Tracking levemente negativo solo en títulos grandes (regla del design system). */
+.headline-tracking {
+  letter-spacing: -0.02em;
+}
